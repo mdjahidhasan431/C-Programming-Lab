@@ -2,12 +2,22 @@
 
 int main()
 {
-    int a[5] = {30, 40, 50, 60, 70};
-    int median;
+    int n, i;
+    int odd = 0, even = 0;
 
-    median = a[2];
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
 
-    printf("Median = %d", median);
+    for(i = 1; i <= n; i++)
+    {
+        if(i % 2 == 0)
+            even++;
+        else
+            odd++;
+    }
+
+    printf("Total Odd Numbers = %d\n", odd);
+    printf("Total Even Numbers = %d\n", even);
 
     return 0;
 }
