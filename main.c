@@ -2,12 +2,17 @@
 
 int main()
 {
-    int a[5] = {30, 40, 50, 60, 70};
-    int median;
+    int n, i, sum = 0;
 
-    median = a[2];
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
 
-    printf("Median = %d", median);
+    for(i = 1; i <= n; i++)
+    {
+        sum = sum + i;
+    }
+
+    printf("Sum = %d\n", sum);
 
     return 0;
 }
