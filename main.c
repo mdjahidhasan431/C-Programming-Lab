@@ -2,12 +2,13 @@
 
 int main()
 {
-    int a[5] = {30, 40, 50, 60, 70};
-    int median;
+    int first_number = 30;
+    int second_number = 40;
+    int total_sum;
 
-    median = a[2];
+    total_sum = first_number + second_number;
 
-    printf("Median = %d", median);
+    printf("Total Sum = %d", total_sum);
 
     return 0;
 }
